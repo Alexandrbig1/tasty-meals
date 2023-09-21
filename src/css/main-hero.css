@@ -1,0 +1,314 @@
+/* text content */
+.hero_title {
+  color: var(--light-main-black-text-color);
+  width: 335px;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero_title {
+    width: 446px;
+    font-size: 36px;
+  }
+}
+
+/* @media screen and (min-width: 768px) .event-title {
+  width: 446px;
+  font-size: 36px;
+} */
+
+.hero_title-span {
+  font-family: auto;
+  color: var(--light-main-accent-color);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero_text-content {
+  color: var(--light-main-black-text-color);
+  width: 335px;
+  margin: 14px 0 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+@media screen and (min-width: 768px) {
+  .hero_text-content {
+    width: 408px;
+    margin: 16px 0 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/* btn class */
+.hero_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light-body-color);
+  border-radius: 15px;
+  border: 1px solid var(--light-main-accent-color);
+  cursor: pointer;
+  transition: all var(--trns-general);
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero_btn:hover,
+.hero_btn:focus {
+  background-color: var(--light-main-accent-color);
+  color: var(--light-body-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .hero_btn {
+    padding: 14px 28px;
+  }
+}
+/* контейнер для pading від хедера */
+.def {
+  display: block;
+  padding-top: 89px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .def {
+    padding-top: 87px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .def {
+    padding-top: 94px;
+    padding-bottom: 100px;
+    align-items: center;
+    display: flex;
+  }
+}
+/* DIV FOR HERO */
+
+.container-hero {
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    width: 446px;
+    margin-bottom: 64px;
+  }
+}
+
+/* SWIPER */
+.cooker-heston {
+  background-image: url('https://tasty-treats-backend.p.goit.global/HestonChan.webp');
+}
+
+.coocer-card {
+  width: 280px;
+  inline-size: 80px;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.slide {
+  display: flex;
+  gap: 16px;
+}
+
+/* @media screen and (min-width: 375px) {
+  .container-hero {
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid red;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container-hero-swiper {
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid red;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    outline: 1px solid red;
+    max-width: 1279px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-hero {
+    outline: 1px solid red;
+    max-width: 1280px;
+    padding-left: 100px;
+  }
+} */
+
+/* DIV FOR SWIPER */
+/* .hero-swiper {
+  width: 515px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-swiper {
+    width: 889px;
+  }
+}
+
+.cooker-card {
+  width: 280px;
+  inline-size: 80px;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.cooker-heston {
+  background-image: url('https://tasty-treats-backend.p.goit.global/HestonChan.webp');
+}
+
+.cooker-anna-card {
+  background-image: url('https://tasty-treats-backend.p.goit.global/AnaSmyth.webp');
+}
+
+.cooker-ferran-card {
+  background-image: url('https://tasty-treats-backend.p.goit.global/FerranMeyer.webp');
+}
+
+.topic-card {
+  background-color: var(--main-text-dark-color);
+  width: 200px;
+  height: 280px;
+  border-radius: 15px;
+  border: 1px solid var(--border-main-color);
+  position: relative;
+  z-index: 1;
+}
+
+.topic-card::after {
+  content: '';
+  width: 150px;
+  height: 137px;
+  background-color: var(--brand-color);
+  opacity: 0.6;
+  filter: blur(81px);
+  position: absolute;
+  left: 12%;
+  top: 14%;
+  z-index: 2;
+}
+
+.card {
+  block-size: 157px;
+  height: 180px;
+  background-size: cover;
+  background-position: 50% 10px;
+  background-repeat: no-repeat;
+  margin-block-end: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.barbecue-card {
+  background-image: url('https://tasty-treats-backend.p.goit.global/previewDish1.webp');
+}
+
+.pizza-card {
+  background-image: url('https://tasty-treats-backend.p.goit.global/previewDish2.webp');
+  background-position: 50% -4px;
+}
+
+.pancakes-card {
+  background-image: url('https://tasty-treats-backend.p.goit.global/previewDish3.webp');
+}
+
+.dish-card {
+  block-size: 280px;
+  inline-size: 200px;
+  background-position: 30%;
+  background-size: 564px;
+  border-radius: 15px;
+}
+
+.barbecue-dish {
+  background-image: url('	https://tasty-treats-backend.p.goit.global/previewDish1.webp');
+}
+
+.pizza-dish {
+  background-image: url('	https://tasty-treats-backend.p.goit.global/previewDish2.webp');
+}
+
+.pancakes-dish {
+  background-image: url('	https://tasty-treats-backend.p.goit.global/previewDish3.webp');
+  background-color: var(--main-text-dark-color);
+}
+
+.card-title {
+  color: var(--main-hero-img-color);
+  text-align: center;
+  font-size: 10px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-block-end: 8px;
+  user-select: none;
+}
+
+.pizza-title {
+  margin-inline: auto;
+  width: 144px;
+}
+
+.card-area {
+  color: var(--secondary-hero-img-color);
+  text-align: center;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 150%;
+  user-select: none;
+}
+
+.pag-list .pag-btn {
+  background-color: var(--main-text-dark-color);
+}
+
+.pag-list .pag-btn.is-active {
+  background-color: var(--brand-color);
+}
+
+.hero-section .pag-list {
+  bottom: -30px;
+  left: -10px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(8%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+} */

@@ -1,0 +1,24 @@
+/* варс */
+@import './vars.css';
+
+/* база */
+@import './base.css';
+
+/* шрифти */
+@import './fonts.css';
+
+/* стилі секцій */
+@import './header.css';
+@import './main-hero.css';
+@import './main-section.css';
+
+@import './hero-favorite.css';
+@import './modal-recipe.css';
+@import './main-section-categoris.css';
+@import './order-now.css';
+
+/* SIPER HEROOOOO */
+/* @import '../../node_modules/swiper/swiper-bundle.css'; */
+@import './swiper.css';
+
+@import './main-section-popular-recept.css';

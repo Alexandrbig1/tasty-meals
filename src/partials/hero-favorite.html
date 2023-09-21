@@ -1,0 +1,67 @@
+<main>
+  <div class="container">
+    <div class="hero-favorites-wrapper">
+      <div class="hero-favorites-container-image">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            height="356"
+            srcset="
+              ./images/hero-favorites/hero-favorite-dekstop@1x.jpg 1x,
+              ./images/hero-favorites/hero-favorite-dekstop@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            height="356"
+            srcset="
+              ./images/hero-favorites/hero-favorite-tablet@1x.jpg 1x,
+              ./images/hero-favorites/hero-favorite-tablet@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero-favorites/hero-favorite-phone@1x.jpg 1x,
+              ./images/hero-favorites/hero-favorite-phone@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="hero-favorite-img"
+            src="./images/hero-favorites/hero-favorite-phone@1x.jpg"
+            alt=""
+            height="516"
+          />
+        </picture>
+      </div>
+      <div class="hero-favorites-content-wrapper">
+        <svg class="icon" width="68" height="58">
+          <use href="./images/icons.svg#icon-cooker-hat"></use>
+        </svg>
+        <p class="hero-favorites-text">
+          It appears that you haven't added any recipes to your favorites yet.
+          To get started, you can add recipes that you like to your favorites
+          for easier access in the future.
+        </p>
+      </div>
+      <div class="container-button-markup-wrapper">
+        <div class="hero-favorite-buttons-wrapper">
+          <button
+            class="hero-favorites-btn-design hero-favorite-btn-active js-hero-favorite-all-categories-listener"
+            type="button"
+          >
+            All categories
+          </button>
+          <ul class="hero-favorite-buttons"></ul>
+        </div>
+        <div class="main-img-wrap">
+          <ul class="hero-favorite-cards main-img-menu"></ul>
+        </div>
+        <div class="main-pagination"></div>
+      </div>
+    </div>
+  </div>
+</main>

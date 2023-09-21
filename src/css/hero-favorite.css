@@ -1,0 +1,131 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-favorites-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-top: 275px;
+  margin-bottom: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-favorites-content-wrapper {
+    margin-top: 0px;
+    margin-bottom: 64px;
+  }
+}
+
+.hero-favorites-container-image {
+  /* display: none; */
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-favorites-container-image {
+    display: block;
+  }
+}
+
+.hero-favorites-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #050505;
+  max-width: 461px;
+}
+.container-image {
+  display: none;
+}
+
+.hero-favorite-buttons-wrapper {
+  display: flex;
+  gap: 12px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.hero-favorite-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-favorites-btn-design {
+  font-family: var(--font-main);
+  height: 50px;
+  width: max-content;
+  color: rgba(5, 5, 5, 0.3);
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
+  background-color: #0000;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  border-radius: 15px;
+  padding: 14px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-favorites-btn-design {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .hero-favorite-buttons-wrapper {
+    gap: 15px;
+  }
+
+  .hero-favorite-buttons {
+    gap: 15px;
+  }
+}
+
+.hero-favorite-btn-active {
+  color: #f8f8f8;
+  background-color: #9bb537;
+}
+
+.container-button-markup-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-button-markup-wrapper {
+    gap: 32px;
+  }
+}
+
+.hero-favorite-img {
+  width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-favorite-img {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-favorite-img {
+    width: 1080px;
+  }
+}

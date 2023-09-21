@@ -1,0 +1,18 @@
+:root {
+  --font-main: 'Inter';
+  --light-body-color: #f8f8f8;
+  --light-main-accent-color: #9bb537;
+  --light-main-black-text-color: #050505;
+  --light-description-text: #050505cc;
+
+  --dark-body-color: #161616;
+  --dark-main-accent-color: #9bb537;
+  --dark-main-white-text-color: #ffffff;
+  --dark-description-text: #ffffffcc;
+  --dark-header-secondary-color: #b4afaf84;
+
+  --raiting-stars-color: #eea10c;
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-slow: 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}

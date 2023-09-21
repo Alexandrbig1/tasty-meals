@@ -1,0 +1,44 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-form-title">Order now</p>
+    <form class="modal-form">
+      <label class="modal-form-label">
+        <span class="modal-form-input-descr">Name</span>
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form-input"
+          required
+          pattern="^[a-zA-Z]{1,10}"
+      /></label>
+      <label class="modal-form-label">
+        <span class="modal-form-input-descr">Phone number</span>
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      /></label>
+      <label class="modal-form-label">
+        <span class="modal-form-input-descr">Email</span>
+        <input
+          type="email"
+          name="user_email"
+          class="modal-form-input"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      /></label>
+      <label class="modal-form-label">
+        <span class="modal-form-input-descr">Comment</span>
+        <textarea name="user_message" class="modal-form-message"></textarea>
+      </label>
+      <button type="submit" class="modal-form-submit">Send</button>
+    </form>
+  </div>
+</div>

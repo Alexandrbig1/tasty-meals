@@ -1,0 +1,118 @@
+.categories {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.btn-all-categories {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  min-width: 176px;
+  height: 50px;
+  padding: 14px 29px;
+  border-radius: 15px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  background-color: transparent;
+  color: rgba(5, 5, 5, 0.5);
+  margin-right: auto;
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
+}
+
+.active-all-cat-btn {
+  color: var(--light-body-color);
+  background-color: var(--light-main-accent-color);
+  border: none;
+  padding: 14px 30px;
+}
+
+.btn-all-categories:active {
+  color: var(--light-body-color);
+  background-color: var(--light-main-accent-color);
+  border: none;
+  padding: 14px 30px;
+}
+
+.select-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 326px;
+  height: 200px;
+  overflow-y: scroll;
+}
+.select-category-list::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+.select-category-list::-webkit-scrollbar-thumb {
+  background: rgba(5, 5, 5, 0.18);
+  border-radius: 12px;
+  height: 116px;
+}
+
+.btn-select-category {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  color: rgba(5, 5, 5, 0.3);
+  cursor: pointer;
+}
+.btn-select-active {
+  color: var(--light-main-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .categories {
+    gap: 30px;
+  }
+  .btn-all-categories {
+    padding: 14px 28px;
+  }
+  .active-all-cat-btn {
+    padding: 14px 29px;
+  }
+  
+  .select-category-list {
+    gap: 24px;
+    width: 176px;
+    height: 416px;
+  }
+  .select-category-list::-webkit-scrollbar-thumb {
+    height: 201px;
+  }
+
+  .btn-select-category {
+    font-size: 16px;
+  }
+  .btn-all-categories:hover,
+  .btn-all-categories:focus {
+    padding: 14px 29px;
+    color: var(--light-body-color);
+    background-color: var(--light-main-accent-color);
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .categories {
+    gap: 30px;
+  }
+  .btn-all-categories {
+    min-width: 174px;
+  }
+  .select-category-list {
+    width: 235px;
+  }
+  .btn-all-categories:hover,
+  .btn-all-categories:focus {
+    padding: 15px 29px;
+  }
+}
