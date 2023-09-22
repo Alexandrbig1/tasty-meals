@@ -261,6 +261,8 @@ a:link {
 .main-img-wrap {
   margin-top: 44px;
   margin-bottom: 64px;
+  position: relative;
+  /* max-height: 925px; */
 }
 
 @media screen and (min-width:768px) and (max-width:1279px) {
@@ -268,6 +270,16 @@ a:link {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+    /* max-height: 1104px; */
+  }
+}
+
+@media (max-width:767px) {
+  .main-img-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* max-height: unset; */
   }
 }
 
@@ -964,10 +976,10 @@ a:link {
 /* *** LOADER **** */
 /* ********** */
 
-/* .loader {
-  top: 50%;
+.main-loader {
+  top: 100px;
   left: 50%;
-  color: #ffffff;
+  color: var(--light-main-accent-color);
   font-size: 45px;
   text-indent: -9999em;
   overflow: hidden;
@@ -1026,4 +1038,4 @@ a:link {
   100% {
     transform: rotate(360deg)
   }
-} */
+}

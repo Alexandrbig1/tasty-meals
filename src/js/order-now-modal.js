@@ -4,16 +4,23 @@ const refs = {
   modal: document.querySelector('[data-modal]'),
 };
 
-refs.orderNowBtn.addEventListener('click', toggleModal);
-refs.closeModalBtn.addEventListener('click', toggleModal);
-document.addEventListener('keydown', function (evt) {
-  if (evt.key === 'Escape') {
-    toggleModal();
-  }
-});
+refs.orderNowBtn.addEventListener('click', handleModalOpen);
+refs.closeModalBtn.addEventListener('click', handleModalClose);
 
-function toggleModal() {
-  refs.modal.classList.toggle('is-hidden');
+function handleEsc(evt) {
+  if (evt.key === 'Escape') {
+    handleModalClose();
+  }
 }
 
-export { toggleModal}
+function handleModalOpen() {
+  refs.modal.classList.remove('is-hidden');
+  document.addEventListener('keydown', handleEsc);
+}
+
+function handleModalClose() {
+  refs.modal.classList.add('is-hidden');
+  document.removeEventListener('keydown', handleEsc);
+}
+
+export { handleModalOpen }

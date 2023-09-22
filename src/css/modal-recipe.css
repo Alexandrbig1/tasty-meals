@@ -167,6 +167,9 @@
 }
 .tags-btn-wrapper {
   margin-bottom: 24px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .modal-receipt-tag-btn {
   font-size: 12px;

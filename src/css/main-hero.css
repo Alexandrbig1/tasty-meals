@@ -48,7 +48,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
+  color: var(--light-main-black-text-color);
+  font-family: Inter;
   background-color: var(--light-body-color);
   border-radius: 15px;
   border: 1px solid var(--light-main-accent-color);

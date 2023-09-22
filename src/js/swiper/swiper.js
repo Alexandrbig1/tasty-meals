@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-// import 'swiper';
+import 'swiper';
 const BASE_URL = 'https://tasty-treats-backend.p.goit.global/api';
 const events = document.querySelector('.swiper-wrapper');
 function renderEvents(data) {

@@ -1,0 +1,151 @@
+.footer-container {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  overflow: hidden;
+  color: rgba(5, 5, 5, 0.80);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.lighting {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.lighting li {
+  list-style: none;
+  color: var(--light-main-accent-color);
+  font-size: 14px;
+  animation: lighting 1.4s linear infinite;
+}
+
+@keyframes lighting {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  /* fff900 */
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #22ff00, 0 0 50px #ff6c00;
+  }
+}
+
+.lighting li:nth-child(1) {
+  animation-delay: 0
+}
+
+.lighting li:nth-child(2) {
+  animation-delay: 0.1s
+}
+
+.lighting li:nth-child(3) {
+  animation-delay: 0.2s
+}
+
+.lighting li:nth-child(4) {
+  animation-delay: 0.3s
+}
+
+.lighting li:nth-child(5) {
+  animation-delay: 0.4s
+}
+
+.lighting li:nth-child(6) {
+  animation-delay: 0.5s;
+  /* opacity: 0; */
+}
+
+.lighting li:nth-child(7) {
+  animation-delay: 0.6s
+}
+
+.lighting li:nth-child(8) {
+  animation-delay: 0.7s
+}
+
+.lighting li:nth-child(9) {
+  animation-delay: 0.8s
+}
+
+.lighting li:nth-child(10) {
+  animation-delay: 0.9s
+}
+
+.lighting li:nth-child(11) {
+  animation-delay: 1s
+}
+
+/* .heart {
+  margin-top: -8px;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: #ff3838;
+  transform: rotate(45deg);
+  animation: heartbeat 1.4s linear infinite
+}
+
+.heart:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.heart:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  30% {
+    transform: rotate(45deg) scale(1.4);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(45deg) scale(1.4);
+  }
+
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+} */
